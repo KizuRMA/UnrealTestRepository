@@ -1,14 +1,75 @@
-Binaries
-DerivedDataCache
-Intermediate
-Saved
-.vscode
-.vs
-*.VC.db
-*.opensdf
-*.opendb
-*.sdf
-*.sln
-*.suo
+
+# Visual Studio 2015 ユーザー固有のファイル
+.vs/
+
+#コンパイルされたオブジェクト ファイル
+*.slo
+*.lo
+*.o
+*.obj
+
+#プリコンパイル済みヘッダー
+*.gch
+*.pch
+
+#コンパイルされた動的ライブラリ
+*.so
+*.dylib
+*.dll
+
+# Fortran モジュール ファイル
+*.mod
+
+#コンパイルされた静的ライブラリ
+*.lai
+*.la
+*.a
+*.lib
+
+#実行可能ファイル
+*.exe
+*.out
+*.app
+*.ipa
+
+#Unreal Engine側で生成可能なファイル
 *.xcodeproj
 *.xcworkspace
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+#プリコンパイル済みアセット
+SourceArt/**/*.png
+SourceArt/**/*.tga
+
+#バイナリ ファイル
+Binaries/*
+Plugins/*/Binaries/*
+
+#ビルド
+Build/*
+
+# Whitelist PakBlacklist-<BuildConfiguration>.txt files
+!Build/*/
+Build/*/**
+!Build/*/PakBlacklist*.txt
+
+#ビルドでアイコン ファイルを無視しない
+!Build/**/*.ico
+
+# Built data for maps
+*_BuiltData.uasset
+
+#エディターによって生成された構成ファイル
+Saved/*
+
+#エンジンが使用するコンパイル済みソース ファイル
+Intermediate/*
+Plugins/*/Intermediate/*
+
+#エディタが使用するキャッシュ ファイル
+DerivedDataCache/*
